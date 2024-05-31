@@ -166,3 +166,60 @@ nav ul li a:hover {
     background-color: #fff;
     color: #1E90FF; /* Blue color */
 }
+
+
+/* sign up css part */
+.signup-section {
+    background-color: #1E90FF; /* Blue color */
+    color: white;
+    padding: 2rem 0;
+}
+
+.signup-section .container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signup-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.signup-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.signup-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.signup-section input[type="text"],
+.signup-section input[type="number"],
+.signup-section input[type="password"],
+.signup-section select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.signup-section button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #1E90FF; /* Blue color */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-section button:hover {
+    background-color: #fff;
+    color: #1E90FF; /* Blue color */
+}
