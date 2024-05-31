@@ -76,13 +76,13 @@ WSGI_APPLICATION = 'darslab.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'Darslab',
-        'USER': 'root',
-        'PASSWORD': 'mysql12345',
-        'PORT': '3306',
-    }
+    # 'default': {
+    #     'ENGINE': 'mysql.connector.django',
+    #     'NAME': 'Darslab',
+    #     'USER': 'root',
+    #     'PASSWORD': 'mysql12345',
+    #     'PORT': '3306',
+    # }
 }
 
 
@@ -121,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
-STATICFILE_DIRS = (os.path.join(BASE_DIR, 'static/'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static/'),)
 
 MEDIA_URL = 'media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
