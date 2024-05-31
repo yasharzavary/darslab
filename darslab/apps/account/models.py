@@ -20,6 +20,6 @@ class Profile(models.Model):
     ]
     certificate = models.CharField(choices=CERTIFICATES, max_length=15, verbose_name='تحصیلات')
     profile_image = models.CharField(max_length=20, default='nophoto.png', verbose_name='عکس')
-    slug = models.models.SlugField()
+    slug = models.SlugField()
     courses = models.ManyToManyField(Course, verbose_name='دوره‌ها')
 
