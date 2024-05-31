@@ -76,13 +76,13 @@ WSGI_APPLICATION = 'darslab.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'mysql.connector.django',
-        'NAME': 'Darslab',
-        'USER': 'root',
-        'PASSWORD': 'mysql12345',
-        'PORT': '3306',
-    }
+    # 'default': {
+    #     'ENGINE': 'mysql.connector.django',
+    #     'NAME': 'Darslab',
+    #     'USER': 'root',
+    #     'PASSWORD': 'mysql12345',
+    #     'PORT': '3306',
+    # }
 }
 
 
