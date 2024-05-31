@@ -109,3 +109,60 @@ nav ul li a:hover {
         margin: 0;
     }
 }
+
+
+
+
+/* sign in css part */
+.signin-section {
+    background-color: #1E90FF; /* Blue color */
+    color: white;
+    padding: 2rem 0;
+}
+
+.signin-section .container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signin-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.signin-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.signin-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.signin-section input[type="text"],
+.signin-section input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.signin-section button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #1E90FF; /* Blue color */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signin-section button:hover {
+    background-color: #fff;
+    color: #1E90FF; /* Blue color */
+}
