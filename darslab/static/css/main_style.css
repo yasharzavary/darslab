@@ -1,0 +1,223 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #1E90FF; /* Blue color */
+    color: white;
+    padding: 1rem 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px; /* Adjust according to your footer height */
+    text-align: center;
+    line-height: 50px; /* Vertically center content */
+}
+
+header .container, footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+header h1, footer p {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Header styles */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #1E90FF;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.header-left {
+    flex: 1;
+    text-align: left;
+}
+
+.header-center {
+    flex: 2;
+    text-align: center;
+}
+
+.header-right {
+    flex: 1;
+    text-align: right;
+}
+
+.logo {
+    margin: 0;
+}
+
+.signin,
+.signup,
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+/* Adjustments for responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .header-left,
+    .header-center,
+    .header-right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .header-left,
+    .header-right {
+        margin: 0;
+    }
+}
+
+
+/* sign in css part */
+.signin-section {
+    background-color: #83afda; /* Blue color */
+    color: white;
+    padding: 2rem 0;
+}
+
+.signin-section .container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signin-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.signin-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.signin-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.signin-section input[type="text"],
+.signin-section input[type="password"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.signin-section button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #1E90FF; /* Blue color */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signin-section button:hover {
+    background-color: #fff;
+    color: #1E90FF; /* Blue color */
+}
+
+
+/* sign up css part */
+.signup-section {
+    background-color: #83afda; /* Blue color */
+    color: white;
+    padding: 2rem 0;
+}
+
+.signup-section .container {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.signup-section h2 {
+    margin-bottom: 1.5rem;
+}
+
+.signup-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.signup-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.signup-section input[type="text"],
+.signup-section input[type="number"],
+.signup-section input[type="password"],
+.signup-section select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #fff;
+    border-radius: 4px;
+}
+
+.signup-section button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: white;
+    color: #1E90FF; /* Blue color */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.signup-section button:hover {
+    background-color: #fff;
+    color: #1E90FF; /* Blue color */
+}
