@@ -22,4 +22,5 @@ class Profile(models.Model):
     profile_image = models.CharField(max_length=20, default='nophoto.png', verbose_name='عکس')
     slug = models.SlugField()
     courses = models.ManyToManyField(Course, verbose_name='دوره‌ها')
+    active = models.BooleanField(default=False)
 
