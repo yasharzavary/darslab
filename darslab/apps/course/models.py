@@ -26,4 +26,5 @@ class Course(models.Model):
     level = models.CharField(choices=LEVELS, max_length=20, verbose_name='سطح')
     class_number = models.IntegerField( verbose_name='تعداد جلسات')
     image_path = models.CharField(max_length=30, verbose_name='آدرس عکس')
+    slug = models.SlugField(null=True)
     

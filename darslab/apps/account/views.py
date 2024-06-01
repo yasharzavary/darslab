@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from mysql.connector import connect, Error
+from apps.course.models import Course
 
 
 
@@ -20,11 +21,13 @@ def register(req):
     except Error as err:
         return render(req, 'signIO/sinO.html', {'error': True})
     
+    courses = Course.objects.all()
     context = {
         'error': False,
         'slug': slug,
+        'course': courses,
     }
 
-    return render(req, 'main/index.html', context)
+    return render(req, 'course/cors.html', context)
 
 
