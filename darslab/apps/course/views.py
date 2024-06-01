@@ -15,4 +15,5 @@ def courses(req):
 
 def detail_course(req, slug_id):
     course = Course.objects.filter(slug = slug_id)
-    return render(req, 'course/course.html', {'course': course})
+    print(course)
+    return render(req, 'course/course.html', {'course': course[0], 'media_url': settings.MEDIA_URL})

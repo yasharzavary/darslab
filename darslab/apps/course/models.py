@@ -27,4 +27,7 @@ class Course(models.Model):
     class_number = models.IntegerField( verbose_name='تعداد جلسات')
     image_path = models.CharField(max_length=30, verbose_name='آدرس عکس')
     slug = models.SlugField(null=True)
+
+    def __str__(self) -> str:
+        return f'{self.title}'
     
