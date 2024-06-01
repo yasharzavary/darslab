@@ -1,0 +1,33 @@
+{% extends "maintemplate.html" %}
+
+
+{% block content %}
+<section class="course-list-section">
+    <div class="container">
+        <h2>Our Courses</h2>
+        <div class="course-list">
+
+            {% for c in course %}
+            
+                <div class="course-item">
+                    <img src="path/to/image.jpg" alt="Course Image">
+                    <div class="course-details">
+                        <h3>{{c.title}}</h3>
+                        <p>Teacher: {{c.teacher}}</p>
+                        <p>Price: {{c.price}}</p>
+                        <p>Score: {{c.score}}</p>
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+            
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
