@@ -5,7 +5,7 @@
 <section class="signin-section">
     <div class="container">
         <h2>Sign In</h2>
-        <form action="{% url 'sign-in' %}" method="post">
+        <form action="{% url 'log_int' %}" method="post">
             {% csrf_token %}
             <div class="form-group">
                 <label for="username">Username</label>
@@ -23,14 +23,14 @@
 {% if first %}
 
 
-{% elif find %}
-    <h2 style="color:green;">{{person.family}}</h2>
-    <h2 style="color:green;">{{person.certificate}}</h2>
-    <h2 style="color:green;">{{person.phone}}</h2>
+{% elif find == True %}
+    <h2 style="color:green; text-align: center;">{{person.family}}</h2>
+    <h2 style="color:green; text-align: center;">{{person.certificate}}</h2>
+    <h2 style="color:green; text-align: center;">{{person.phone}}</h2>
 
 {% else %}
 
-    <h2 style="color:red;">detail false, try again</h2>
+    <h2 style="color:red; text-align: center;">detail false, try again</h2>
 
 {% endif %}
 
