@@ -16,7 +16,7 @@
                         <p>Teacher: {{c.teacher}}</p>
                         <p>Price: {{c.price}}</p>
                         <p>Score: {{c.score}}</p>
-                        <a href = '{% url "main-index" %}'><button>Enroll Now</button></a>
+                        <a href = '{% url "detail_course" c.slug %}'><button>Enroll Now</button></a>
                     </div>
                 </div>
             
