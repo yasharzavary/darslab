@@ -22,4 +22,5 @@ urlpatterns = [
     path('', include('apps.main.urls')),
     path('sign/', include('apps.signIO.urls')),
     path('account/', include('apps.account.urls')),
+    path('course/', include('apps.course.urls')),
 ]
