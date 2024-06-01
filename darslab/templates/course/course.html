@@ -1,0 +1,29 @@
+{% extends 'maintemplate.html' %}
+
+{% block container %}
+<section class="course-detail-section">
+    <div class="container">
+        <div class="course-detail-header">
+            <img src="path/to/image.jpg" alt="Course Image">
+            <div class="course-info">
+                <h1>Course Title</h1>
+                <p>Teacher: John Doe</p>
+                <p>Price: $99</p>
+                <p>Time: 10 hours</p>
+                <p>Level: Intermediate</p>
+                <p>Class Number: 5</p>
+                <p>Score: 
+                    <span class="stars">
+                        ★★★★☆
+                    </span> 
+                    (4/5)
+                </p>
+            </div>
+        </div>
+        <div class="course-description">
+            <h2>Description</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae congue nunc. Fusce sodales ipsum sit amet sem efficitur, et luctus massa laoreet. Integer nec tortor nisi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+        </div>
+    </div>
+</section>
+{% endblock %}
