@@ -11,3 +11,8 @@ def courses(req):
     }
     return render(req, 'course/cors.html', context)
 
+
+
+def detail_course(req, slug_id):
+    course = Course.objects.filter(slug = slug_id)
+    return render(req, 'course/course.html', {'course': course})
