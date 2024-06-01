@@ -367,3 +367,66 @@ nav ul li a:hover {
     color: #666;
     line-height: 1.6;
 }
+
+
+
+/* contact style part */
+.contact-section {
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+}
+
+.contact-section .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.contact-section h2 {
+    margin-bottom: 1.5rem;
+    color: #1E90FF; /* Blue color */
+    text-align: center;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-section button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    background-color: #1E90FF; /* Blue color */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #1C86EE; /* Darker blue color */
+    transform: translateY(-2px);
+}
